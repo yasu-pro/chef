@@ -1,0 +1,391 @@
+@import url(css/style.css);
+
+ul,li {
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+}
+
+.header-image img {
+    width: 100%;
+    margin: 0 auto;
+    vertical-align: bottom;
+    position: relative;
+}
+
+h1 {
+    width: 40%;    
+    font-size: 50px;
+    color: gray;
+    font-family: "HG正楷書体-PRO";
+    position: absolute;
+    top: 60%;
+    left: 79%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+}
+
+h1 span {
+    font-size: 80px;
+    color: white;
+}
+
+.logo {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+/* nav */
+.gnav {
+    width: 100%;
+    height: 20%;
+}
+
+.gnav ul{ 
+    display:table; 
+    table-layout: fixed;
+    width:100%; 
+}
+
+.gnav li {
+    display: table-cell;
+    border-bottom : gray solid 2px;
+    text-align: center;
+}
+
+nav a {
+    height: 100%;
+    display: block;
+    line-height: 1.0;
+    padding: 6px 0;
+    border-left: 1px solid black;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 30px 0;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    font-family: "HG正楷書体-PRO";
+}
+
+nav a:hover {
+    background-color: gray;
+}
+
+/* main-contents */
+main {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.main-contents {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    font-family: "HG正楷書体-PRO";
+}
+
+.about {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.about .h2 {
+    text-align: center;
+    font-size: 30px;
+    writing-mode: vertical-rl;
+    margin: 0 20px;
+}
+
+
+.about .details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.about section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about section h3 {
+    font-size: 20px;
+    order: 2;
+}
+
+.about section img {
+    width: 300px;
+    height: 220px;
+    order: 1;
+}
+
+.about section p {
+    order: 3;
+}
+
+.menu {
+    width: 100%;
+    margin-top: 100px;
+    font-family: "HG正楷書体-PRO";
+}
+
+.menu article {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 30px;
+    writing-mode: vertical-lr;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.menu .list {
+    width: 100%;
+}
+
+.menu article ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu li {
+    height: 100%;
+    width: 100%;
+}
+
+.menu li  span {
+    font-size: 24px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+/* footer */
+footer {
+    margin-top: 100px
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(59, 59, 59);
+    color: #fff;
+    font-family: "HG正楷書体-PRO";
+    text-align: center;
+}
+
+.access h2 {
+    font-size: 30px;
+}
+
+.contact {
+    margin-top: 30px;
+}
+
+.contact h2 {
+    font-size: 30px;
+}
+
+.contact .p {
+    color: gray;
+}
+.contact .tell{
+    font-size: 20px;
+}
+
+.copyright {
+    text-align: center;
+    color: black;
+}
+
+@media screen and (max-width: 479px) {
+    .header img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .header .logo {
+        top: 5%;
+        left: 5%;
+        width: 10%;
+        height: 10%;
+    }
+    .header h1 {
+        top: 30%;
+        left: 62%;
+        width: 70%;
+        height: auto;
+        font-size: x-large;
+    }
+
+
+    .header h1 span {
+        font-size: 50px;
+    }
+
+    /* nav */
+    nav a {
+        padding: 10px 0;
+        font-size: 15px;
+    }
+
+    .main-contents {
+        margin-top: 20px;
+    }
+
+    .about {
+        margin-top: 0;
+    }
+    
+    .about article {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about .h2 {
+        width: auto;
+        height: auto;
+        float: none;
+        text-align: center;
+        font-size: 30px;
+        writing-mode: horizontal-tb;
+    }
+
+    .about .h2 h2 {
+        margin-bottom: 10px;
+        color: brown;
+    }
+
+    .about .details  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about .details section {
+        writing-mode: horizontal-tb;
+
+    }
+
+    .about .details img {
+        display: none;
+    }
+
+    .about .h2 {
+        width: auto;
+        height: auto;
+        clear: both;
+        text-align: center;
+        font-size: 30px;
+        writing-mode: horizontal-tb;
+    }
+
+    .menu {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .menu article {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+}
+
+    .menu article h2 {
+        margin-bottom: 10px;
+        color: brown;
+        writing-mode: horizontal-tb;
+        text-align: center;
+    }
+
+    .menu img {
+        width: 100px;
+        height: 80px;
+    }
+
+    .list {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu article ul {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu li {
+        height: auto;
+        width: 100%;
+    }
+
+    .menu a {
+        height: auto;
+        width: 100%;
+    }
+
+    .menu li  span {
+        writing-mode: horizontal-tb;
+    }
+    
+    footer {
+        margin-top: 20px;
+    }
+
+    footer .access h2, .contact h2 {
+        color: brown;
+    }
+
+    footer img {
+        width: 200px;
+        height: 160px;
+    }
+}
